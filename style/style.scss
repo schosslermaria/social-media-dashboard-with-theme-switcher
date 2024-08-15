@@ -1,0 +1,226 @@
+$l-color-fundo-div: #F0F3FA;
+$l-color-font: #646776;
+$l-color-font-tdy: #35AB8B;
+$l-color-font-arroba: #747786;
+$l-color-font-yt: #880015;
+$l-color-seguidores: #191C24;
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    margin: 0;
+    transition: background-color 0.3s ease;
+  }
+  
+  
+
+  #painel {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  #cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  
+    
+    #modo-escuro-toggle {
+      display: flex;
+      align-items: center;
+  
+      input {
+        margin-left: 8px;
+        cursor: pointer;
+      }
+    }
+  }
+  
+  #tudo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+     font-family: "Inter", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+  }
+  #estatisticas {
+    height: 130px;
+    width: 250px;
+    background-color: $l-color-fundo-div;
+    border-radius: 10px;
+}
+
+ #imagens {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 30%;
+    font-size: 16px;
+    color: $l-color-font-arroba;
+ }
+
+ #seguidores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &  h1 {
+      font-size: 50px;
+      margin: 0;
+      color: $l-color-seguidores;
+    }
+  
+    &  p {
+      font-size: 18px;
+      margin: 0;
+      color: $l-color-font;
+      justify-content: space-around;
+
+    }
+    &  {
+       font-size: 16px;
+       
+        .positivo {
+        color: $l-color-font-tdy; 
+        margin-top: 30px;
+      }
+
+       .negativo {
+        color: $l-color-font-yt; 
+        margin-top: 30px;
+      }
+    }
+    & h2 {
+      font-size: 22px;
+      margin-bottom: 20px;
+      color: $l-color-font-arroba;
+    }
+  
+}
+
+h3 {
+  display: flex;
+  flex-direction: row;
+  font-size: 18px;
+  margin: 0;
+}
+
+    
+  
+    #facebook,
+    #twitter,
+    #instagram,
+    #youtube {
+      text-align: center;
+      color: $l-color-fundo-div;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      flex: 1;
+      padding: 20px;
+      margin-right: 20px;
+      transition: transform 0.3s ease;
+      border-top-width: 4px;
+      border-top-style: solid;
+  
+
+  
+      #mudanca {
+        font-size: 16px;
+        color: $l-color-fundo-div;
+        padding: 5px 10px;
+        border-radius: 5px;
+  
+        &.positivo {
+          color: $l-color-font-tdy;
+        }
+  
+        &.negativo {
+          color: $l-color-font-yt;
+        }
+      }
+    }
+  
+    #facebook {
+      border-top-color: #3b5998; 
+    }
+  
+    #twitter {
+      border-top-color: #1da1f2; 
+    }
+  
+    #instagram {
+      border-top-color: #e4405f; 
+    }
+  
+    #youtube {
+      border-top-color: #ff0000; 
+    }
+  
+  
+ 
+    #visao-geral {
+        h2 {
+          font-size: 22px;
+          margin-bottom: 20px;
+          color: $l-color-font-arroba;
+        }
+      
+        #estatisticas-visao-geral {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          gap: 20px; // pedir pro professor 
+      
+        
+          .card {
+            color: $l-color-fundo-div;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            flex-basis: calc(20.5% - 10px); // Ajusta o tamanho dos cards invés de height e widht
+            padding: 20px;
+            transition: transform 0.3s ease;
+            border-top-width: 4px;
+            border-top-style: solid;
+      
+            &:hover {
+              transform: translateY(-5px); // efeito quando passa o cursor
+            }
+      
+            p {
+              font-size: 16px;
+              color: $l-color-seguidores;
+              margin: 0;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+            }
+      
+            #valor-estatistica {
+              font-size: 28px;
+              margin: 10px 0;
+              color: $l-color-seguidores;
+            }
+      
+            #mudanca {
+              font-size: 14px;
+              color: $l-color-fundo-div;
+              padding: 3px 8px;
+              border-radius: 5px;
+      
+              &.positivo {
+                color: $l-color-font-tdy; 
+              }
+      
+              &.negativo {
+                color: $l-color-font-yt; 
+              }
+            }
+          }
+        }
+    }
