@@ -2,9 +2,37 @@ $l-color-fundo-div: #F0F3FA;
 $l-color-font: #646776;
 $l-color-font-tdy: #35AB8B;
 $l-color-font-arroba: #747786;
-$l-color-font-yt: #880015;
 $l-color-seguidores: #191C24;
 
+$d-color-fundo: #20222F;$l-color-font-yt: #880015;
+$d-color-fundo-div: #252B43;
+$d-color-font: #8389A9;
+$d-color-font-arroba: #8D95BC;
+$d-color-font-tdy: #35AB8B;
+$d-color-font-yt: #880015;
+$d-color-seguidores: #FFFFFF;
+
+#modo-escuro:checked~#tudo {
+  & #tudo {
+
+  & #tudo {
+  background-color: $d-color-fundo;
+ }
+
+  & h1{
+    color: $d-color-seguidores;
+  }
+
+  & P{
+    color: $d-color-font;
+  }
+
+  & h2 {
+    color: $d-color-font-arroba;
+  }
+  }
+
+}
 
 body {
     font-family: 'Arial', sans-serif;

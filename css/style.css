@@ -1,3 +1,16 @@
+#modo-escuro:checked ~ #tudo #tudo #tudo {
+  background-color: #20222F;
+}
+#modo-escuro:checked ~ #tudo #tudo h1 {
+  color: #FFFFFF;
+}
+#modo-escuro:checked ~ #tudo #tudo P {
+  color: #8389A9;
+}
+#modo-escuro:checked ~ #tudo #tudo h2 {
+  color: #8D95BC;
+}
+
 body {
   font-family: "Arial", sans-serif;
   padding: 20px;
